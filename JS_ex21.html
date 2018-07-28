@@ -1,0 +1,21 @@
+<html>
+<title>Exp21</title>
+ <body>
+ <p>Enter some text:</p>
+ <input type="text" id="txt">
+ <button onclick="validatef()">submit</button>
+ <p id="demo"></p>
+ <script>
+  function validatef()
+  {
+   var str,disptxt;
+   str=document.getElementById("txt").value;
+   if(isNaN(str))
+    disptxt="Valid Input||The Input given consists only characters";
+   else
+    disptxt="Invalid Input";
+	document.getElementById("demo").innerHTML=disptxt;
+  }
+  </script>
+  </body>
+  </html>
